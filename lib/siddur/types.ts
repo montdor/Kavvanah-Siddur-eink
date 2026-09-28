@@ -8,13 +8,13 @@ export interface Place { name:string; latitude:number; longitude:number; timeZon
 export interface Settings {
   uiLanguage:UiLanguage; prayerLinks:boolean;
   accent:Accent; calendarMode:CalendarMode; clockFormat:'24h'|'12h';
-  theme:'light'|'dark'|'black'|'paper'|'dark-paper'|'system'; nusach:Nusach; pronunciation:'sephardi'|'ashkenazi';
+  theme:'light'|'dark'|'black'|'paper'|'dark-paper'|'system'; muditaMode:boolean; nusach:Nusach; pronunciation:'sephardi'|'ashkenazi';
   transliterationLanguage:Language; translationLanguage:Language; translationEditions:Record<Language,string>; layers:Layer[]; layout:'columns'|'stacked';
   textSize:number; font:'serif'|'sans'; vowels:boolean; place:Place;
   zmanMethod:'gra'|'mga'; nightfall:'8.5'|'7.083'|'72'; candleMinutes:number; useElevation:boolean;
 }
 export interface Source { id?:string; title:string; version:string; language:string; license:string; url:string; }
-export interface Paragraph { kind?:'instruction'; spoken?:boolean; he:string; en?:string; ru?:string; uk?:string; translationRefs?:Partial<Record<Language,string>>; translationEditions?:Partial<Record<Language,string>>; translationNotes?:Partial<Record<Language,'combined'>>; }
+export interface Paragraph { kind?:'instruction'; spoken?:boolean; he:string; en?:string; ru?:string; uk?:string; translationRefs?:Partial<Record<Language,string>>; translationEditions?:Partial<Record<Language,string>>; }
 export interface PrayerSection { id:string; title:string; heTitle:string; category:string; service:string; path:string[]; ref:string; paragraphs:Paragraph[]; }
 export interface SiddurData { title:string; nusach:Nusach; sources:Source[]; sections:PrayerSection[]; }
 export interface BookInfo { id:string; title:string; heTitle:string; category:string; chapters:number; }
