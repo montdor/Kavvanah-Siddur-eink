@@ -1,0 +1,169 @@
+html[data-mudita='true'] {
+  --mudita-background: #f6f3ee;
+  --mudita-surface: #f9f7f3;
+  --mudita-foreground: #101010;
+  --mudita-muted: #434343;
+  --mudita-border: #191919;
+}
+
+html[data-mudita='true'],
+html[data-mudita='true'] body {
+  background: var(--mudita-background) !important;
+  color: var(--mudita-foreground) !important;
+}
+
+html[data-mudita='true'] * {
+  box-shadow: none !important;
+  text-shadow: none !important;
+  background-image: none !important;
+  transition: none !important;
+  animation: none !important;
+  scroll-behavior: auto !important;
+}
+
+html[data-mudita='true'] body {
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: 0;
+}
+
+html[data-mudita='true'] .app-shell,
+html[data-mudita='true'] .kavvanah-sidebar,
+html[data-mudita='true'] .prayer-view,
+html[data-mudita='true'] .calendar-panel,
+html[data-mudita='true'] .preferences-dialog,
+html[data-mudita='true'] .settings-dialog,
+html[data-mudita='true'] .sidebar-scroll,
+html[data-mudita='true'] .prayer-content {
+  background: var(--mudita-surface) !important;
+  border: 1px solid var(--mudita-border) !important;
+  color: var(--mudita-foreground) !important;
+}
+
+html[data-mudita='true'] .main-nav-button,
+html[data-mudita='true'] .choice,
+html[data-mudita='true'] .button,
+html[data-mudita='true'] .time-zone-trigger,
+html[data-mudita='true'] .settings-category-trigger,
+html[data-mudita='true'] .sidebar-location,
+html[data-mudita='true'] .sidebar-install {
+  min-height: 52px;
+  border: 1px solid var(--mudita-border) !important;
+  background: transparent !important;
+  color: var(--mudita-foreground) !important;
+}
+
+html[data-mudita='true'] .main-nav-button[data-active='true'],
+html[data-mudita='true'] .choice[data-state='open'],
+html[data-mudita='true'] .button.primary {
+  background: #111111 !important;
+  color: #f8f8f8 !important;
+  border-color: #111111 !important;
+}
+
+html[data-mudita='true'] .prayer-content p,
+html[data-mudita='true'] .verse-cell,
+html[data-mudita='true'] .calendar-day,
+html[data-mudita='true'] .time-value,
+html[data-mudita='true'] .header-date,
+html[data-mudita='true'] .sidebar-date-row,
+html[data-mudita='true'] .sidebar-brand strong {
+  color: var(--mudita-foreground) !important;
+}
+
+html[data-mudita='true'] .eyebrow,
+html[data-mudita='true'] .muted,
+html[data-mudita='true'] .sidebar-date > p,
+html[data-mudita='true'] .settings-category-description,
+html[data-mudita='true'] .translation-attribution {
+  color: var(--mudita-muted) !important;
+}
+
+html[data-mudita='true'] .sidebar-date,
+html[data-mudita='true'] .category-tabs,
+html[data-mudita='true'] .time-zone-panel,
+html[data-mudita='true'] .settings-category {
+  border-color: var(--mudita-border) !important;
+}
+
+html[data-mudita='true'] .category-tabs {
+  overflow: visible;
+  white-space: nowrap;
+}
+
+html[data-mudita='true'] .category-tabs button {
+  min-height: 44px;
+  padding: 10px 14px;
+  border: 1px solid var(--mudita-border);
+  background: transparent;
+  color: var(--mudita-foreground);
+}
+
+html[data-mudita='true'] .prayer-content {
+  padding: 1rem;
+}
+
+html[data-mudita='true'] .sidebar-brand,
+html[data-mudita='true'] .header-left,
+html[data-mudita='true'] .app-header,
+html[data-mudita='true'] .app-footer {
+  gap: 0.75rem;
+}
+
+html[data-mudita='true'] .sidebar-bottom,
+html[data-mudita='true'] .sidebar-footer {
+  border-top: 1px solid var(--mudita-border) !important;
+}
+
+html[data-mudita='true'] .main-nav-button > span:first-of-type,
+html[data-mudita='true'] .sidebar-location > span,
+html[data-mudita='true'] .sidebar-install > span {
+  flex: 1;
+}
+
+html[data-mudita='true'] .prayer-content h1,
+html[data-mudita='true'] .prayer-content h2,
+html[data-mudita='true'] .view-heading h1,
+html[data-mudita='true'] .view-heading h2 {
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.3;
+}
+
+html[data-mudita='true'] .prayer-view .search-box {
+  border: 1px solid var(--mudita-border);
+  background: transparent;
+}
+
+html[data-mudita='true'] .prayer-view .search-box input,
+html[data-mudita='true'] input,
+html[data-mudita='true'] textarea,
+html[data-mudita='true'] select {
+  background: transparent !important;
+  color: var(--mudita-foreground) !important;
+  border: 1px solid var(--mudita-border) !important;
+}
+
+html[data-mudita='true'] .settings-number-steps > button,
+html[data-mudita='true'] .time-zone-options > button {
+  border-left: 1px solid var(--mudita-border);
+}
+
+html[data-mudita='true'] .app-footer {
+  border-top: 1px solid var(--mudita-border) !important;
+  padding-top: 0.75rem;
+}
+
+@media (max-width: 480px) {
+  html[data-mudita='true'] .app-header {
+    padding-inline: 0.75rem;
+  }
+
+  html[data-mudita='true'] .prayer-view {
+    padding: 0.5rem;
+  }
+
+  html[data-mudita='true'] .prayer-content {
+    padding: 0.75rem;
+  }
+}
